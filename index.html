@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora de Consumo de Combustível</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header">Calculadora de Consumo de Combustível</div>
+      <div class="content">
+        <div class="input-group">
+          <label for="distancia">Distância da viagem (km)</label>
+          <input type="number" id="distancia" placeholder="Ex: 300" />
+        </div>
+
+        <div class="input-group">
+          <label for="consumo">Consumo médio do veículo (km/l)</label>
+          <input type="number" id="consumo" placeholder="Ex: 10" />
+        </div>
+
+        <button id="btnCalcular">Calcular consumo</button>
+
+        <div id="areaResultado" class="result-box">
+          <div class="result-title">Resultado</div>
+          <div id="mensagemResultado" class="result-message"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importação do arquivo JavaScript -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
